@@ -18,8 +18,8 @@ defmodule Fxex do
   end
 
   def work do
-    def start do
-        url = "http://openexchangerates.org/api/latest.json?app_id=2bcca613e8034f2cbd416a027258d599"
-        IO.puts url
-    end
+    url = 'http://openexchangerates.org/api/latest.json?app_id=2bcca613e8034f2cbd416a027258d599'
+    resp = HTTPotion.get url
+    IO.puts resp
+  end
 end
