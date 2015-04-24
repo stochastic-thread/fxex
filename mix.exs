@@ -14,7 +14,7 @@ defmodule Fxex.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger, :httpotion]]
+    [applications: [:logger]]
   end
 
   # Dependencies can be Hex packages:
@@ -28,8 +28,7 @@ defmodule Fxex.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [{:exjsx, "~> 3.0.0"},
-      {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.1"},
-      {:httpotion, "~> 2.0.0"}
+    {:exquery, github: "rozap/exquery", branch: "master"}
     ]
   end
 end

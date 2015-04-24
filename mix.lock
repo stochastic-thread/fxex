@@ -1,4 +1,7 @@
-%{"exjsx": {:hex, :exjsx, "3.0.2"},
+%{"earmark": {:hex, :earmark, "0.1.15"},
+  "ex_doc": {:hex, :ex_doc, "0.7.2"},
+  "exjsx": {:hex, :exjsx, "3.0.2"},
+  "exquery": {:git, "git://github.com/rozap/exquery.git", "a2278fadf5ecc88d038c855b721061905fc8829c", [branch: "master"]},
   "httpotion": {:hex, :httpotion, "2.0.0"},
   "ibrowse": {:git, "git://github.com/cmullaparthi/ibrowse.git", "d2e369ff42666c3574b8b7ec26f69027895c4d94", [tag: "v4.1.1"]},
   "jsx": {:hex, :jsx, "2.3.1"}}

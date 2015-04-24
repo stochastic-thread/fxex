@@ -33,4 +33,13 @@ defmodule Fxex do
     exchange_rates = Fxex.rates
     exchange_rates[curr]
   end
+
+  # def parse_gdp_table do
+  #   url = 'https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)'
+  #   :inets.start :httpd
+  #   req = :httpc.request(:get, {url,[]},[],[])
+  #   {:ok, body} = req
+  #   {_,_,list} = body
+  #   list
+  # end
 end
