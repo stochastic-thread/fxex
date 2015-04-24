@@ -11,7 +11,15 @@ Elixir is much easier to get up and running with a working application
 
 ```cd fxex```
 
+```mix deps.get```
+
+```mix compile```
+
 ```iex -S mix run```
 
 ```iex> Fxex.usd "EUR"```
+
+```iex> Fxex.usd "GBP"```
+
+```iex> Fxex.usd "JPY"```
 
