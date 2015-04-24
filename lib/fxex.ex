@@ -17,9 +17,20 @@ defmodule Fxex do
     Supervisor.start_link(children, opts)
   end
 
-  def work do
-    url = "http://openexchangerates.org/api/latest.json?app_id=2bcca613e8034f2cbd416a027258d599"
-    resp = HTTPotion.get url
-    IO.puts resp
+  def rates do
+    url = 'http://openexchangerates.org/api/latest.json?app_id=2bcca613e8034f2cbd416a027258d599'
+    :inets.start :httpd
+    request = :httpc.request(:get, {url, []}, [], [])
+    {_,body} = request
+    {_,_,list} = body
+    str = List.to_string(list)
+    dst = JSX.decode(str)
+    {:ok, hsh} = dst
+    hsh["rates"]
+  end
+
+  def usd(curr) do
+    exchange_rates = Fxex.rates
+    exchange_rates[curr]
   end
 end
