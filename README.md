@@ -10,3 +10,4 @@ Elixir is much easier to get up and running with a working application
 ```cd fxex```
 ```iex -S mix run```
 ```iex> Fxex.usd "EUR"```
+
