@@ -1,8 +1,0 @@
-language: elixir
-notifications:
-  email: false
-otp_release:
-  - 17.0
-  - 17.1
-  - 17.3
-  - 17.4
